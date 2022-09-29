@@ -99,5 +99,16 @@ cd pyomo/contrib/pynumero/
 python build.py -DBUILD_ASL=ON -DBUILD_MA27=ON -DIPOPT_DIR=<path/to/ipopt/build/>
 ```
 
-If these steps succeed, PyNumero and Parapint should both work.
+If these steps succeed, PyNumero should work.
+
+Finally, Parapint can be installed from this repository. Be sure to
+navigate out of the Pyomo directory first.
+
+```
+git clone https://github.com/INFORMSJoC/2021.0285.git IJOC_2021.0285
+cd IJOC_2021.0285/src/parapint-0.4.0/
+pip install -e ./
+```
+
+## Running the Examples from the Paper
 
