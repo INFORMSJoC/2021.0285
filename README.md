@@ -68,3 +68,36 @@ Parapint is a Python package for parallel solution of structured
 nonlinear programs. Documentation can be
 found at https://parapint.readthedocs.io/en/latest/.
 
+## Requirements
+
+The following prerequisites must be installed prior to using the code in this repository.
+
+* Python: https://www.python.org (we used version 3.9.5)
+* Open MPI: https://www.open-mpi.org (we used version 2.1.1)
+* MPI for Python: https://github.com/mpi4py/mpi4py (we used version 3.0.3)
+* NumPy: https://github.com/numpy/numpy (we used version 1.21.2)
+* SciPy: https://github.com/scipy/scipy (we used version 1.7.1)
+* Ipopt: https://coin-or.github.io/Ipopt (we used version 3.12.5). Note that Ipopt needs to be installed from source with shared libraries for ASL and HSL MA27.
+
+## Installation
+
+Note that these installation instructions should work on Linux and OSX. Windows has not been tested.
+
+First, Pyomo must be installed from source:
+
+```
+git clone https://github.com/pyomo/pyomo.git
+cd pyomo
+git checkout -b v6.4.1 6.4.1
+pip install -e ./
+```
+
+Next, the PyNumero extensions need built:
+
+```
+cd pyomo/contrib/pynumero/
+python build.py -DBUILD_ASL=ON -DBUILD_MA27=ON -DIPOPT_DIR=<path/to/ipopt/build/>
+```
+
+If these steps succeed, PyNumero and Parapint should both work.
+
