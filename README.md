@@ -26,8 +26,8 @@ get a more recent version or would like support.**
 
 To cite this software, please cite the [paper](TBD) using its DOI and the software itself, using one of the following DOIs.
 
-PyNumero: [![DOI](https://doi.org/10.11578/dc.20201001.29)](https://doi.org/10.11578/dc.20201001.29)
-Parapint: [![DOI](https://doi.org/10.11578/dc.20201109.2)](https://doi.org/10.11578/dc.20201109.2)
+PyNumero: https://doi.org/10.11578/dc.20201001.29
+Parapint: https://doi.org/10.11578/dc.20201109.2
 
 Below is the BibTex for citing PyNumero.
 
