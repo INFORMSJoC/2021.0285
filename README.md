@@ -112,5 +112,47 @@ cd IJOC_2021.0285/src/parapint-0.4.0/
 pip install -e ./
 ```
 
-## Running the Examples from the Paper
+## Replicating Results from the Paper
 
+### Section 2.4 - SQP
+
+```
+cd scripts
+python sqp.py --nfe_x 500 --nfe_t 1000
+```
+
+### Section 4 - Weak Scaling of Matrix-Vector Dot Products
+
+```
+cd scripts/parallel_matrix_vector_product
+mpirun -np 8 python -m mpi4py weak_scaling.py
+mpirun -np 16 python -m mpi4py weak_scaling.py
+mpirun -np 32 python -m mpi4py weak_scaling.py
+...
+python plot_results.py
+```
+
+### Section 4 - Weak Scaling of Schur-Complement Decomposition
+
+```
+cd scripts/schur_complement
+mpirun -np 8 python -m mpi4py main.py --method psc --n_blocks 8
+mpirun -np 16 python -m mpi4py main.py --method psc --n_blocks 16
+mpirun -np 32 python -m mpi4py main.py --method psc --n_blocks 32
+...
+python plot_results.py
+```
+
+### Section 4 - Parallel Interior-Point Performance
+
+```
+python burgers.py --nfe_x 30 --end_t 2 --nfe_t_per_t 1600 --nblocks 1 --method fs
+python burgers.py --nfe_x 30 --end_t 4 --nfe_t_per_t 1600 --nblocks 1 --method fs
+python burgers.py --nfe_x 30 --end_t 8 --nfe_t_per_t 1600 --nblocks 1 --method fs
+...
+mpirun -np 2 python -m mpi4py burgers.py --nfe_x 30 --end_t 2 --nfe_t_per_t 1600 --nblocks 2 --method psc
+mpirun -np 4 python -m mpi4py burgers.py --nfe_x 30 --end_t 4 --nfe_t_per_t 1600 --nblocks 4 --method psc
+mpirun -np 8 python -m mpi4py burgers.py --nfe_x 30 --end_t 8 --nfe_t_per_t 1600 --nblocks 8 --method psc
+...
+python make_plots.py
+```
