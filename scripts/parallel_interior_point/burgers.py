@@ -14,7 +14,7 @@ import os
 """
 Run this example with, e.g., 
 
-mpirun -np 4 python -m mpi4py burgers.py --nfe_x 30 --end_t 4 --nfe_t_per_t 1600 --nblocks 4
+mpirun -np 4 python -m mpi4py burgers.py --nfe_x 30 --end_t 4 --nfe_t_per_t 1600 --nblocks 4 --method psc
 
 """
 
