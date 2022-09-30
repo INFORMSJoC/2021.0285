@@ -68,7 +68,6 @@ def get_random_mpi_block_bordered_matrix(
             int(sparsity * row_block_length * col_block_length),
         )
         res.set_block(n_block_rows - 1, ndx, block)
-    res.broadcast_block_sizes()
     return res
 
 
@@ -84,7 +83,6 @@ def get_random_mpi_block_vector(n_blocks, block_length, seed):
     )
     for i in distribute_blocks(num_blocks=n_blocks, rank=rank, size=size):
         res.set_block(i, np.random.normal(size=block_length))
-    res.broadcast_block_sizes()
     return res
 
 
