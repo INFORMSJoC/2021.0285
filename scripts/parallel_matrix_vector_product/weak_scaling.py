@@ -4,7 +4,6 @@ from pyomo.contrib.pynumero.sparse.mpi_block_vector import MPIBlockVector
 from pyomo.contrib.pynumero.sparse.mpi_block_matrix import MPIBlockMatrix
 import operator
 import csv
-import psutil
 from typing import Sequence, Dict
 from scipy.sparse import coo_matrix
 import time
@@ -123,8 +122,6 @@ def run_weak_scaling():
                     "block_length",
                     "num_procs",
                     "mpi_block_time",
-                    "virt_mem",
-                    "cpu_usage",
                 ]
             )
     block_length = 100000
@@ -143,8 +140,6 @@ def run_weak_scaling():
     mpi_block_time, mpi_block_res = performance_helper_binary(
         mpi_block_A, mpi_block_x, n_evals, operator.mul
     )
-    virt_mem = psutil.virtual_memory().percent
-    cpu_usage = psutil.cpu_percent()
     if rank == 0:
         writer.writerow(
             [
@@ -154,8 +149,6 @@ def run_weak_scaling():
                 block_length,
                 size,
                 mpi_block_time,
-                virt_mem,
-                cpu_usage,
             ]
         )
         f.close()
