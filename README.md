@@ -116,19 +116,19 @@ pip install -e ./
 
 Figure 3 in the paper shows weak scaling for PyNumero's parallel matrix-vector dot product.
 
-![Figure 3](results/figures/matvec_weak_scaling.pdf)
+![Figure 3](results/figures/matvec_weak_scaling.png)
 
 Figure 4 in the paper shows weak scaling for the solution of
 structured linear systems using Parapint's Schur-Complement
 decomposition method.
 
-![Figure 4](results/figures/sc_weak_scaling.pdf)
+![Figure 4](results/figures/sc_weak_scaling.png)
 
 Figure 5 in the paper shows scaling results for Parapint's
 interior-point algorithm applied to 2-dimensional PDE-constrainted
 optimal control problem with Burgers' Equation.
 
-![Figure 5](results/figures/burgers_scaling.pdf)
+![Figure 5](results/figures/burgers_scaling.png)
 
 ## Replicating Results from the Paper
 
