@@ -77,7 +77,8 @@ The following prerequisites must be installed prior to using the code in this re
 * MPI for Python: https://github.com/mpi4py/mpi4py (we used version 3.0.3)
 * NumPy: https://github.com/numpy/numpy (we used version 1.21.2)
 * SciPy: https://github.com/scipy/scipy (we used version 1.7.1)
-* Plotly: https://plotly.com
+* Plotly: https://plotly.com (we used version 5.9.0)
+* Matplotlib: https://matplotlib.org (we used version 3.5.2)
 * Ipopt: https://coin-or.github.io/Ipopt (we used version 3.12.5). Note that Ipopt needs to be installed from source with shared libraries for ASL and HSL MA27.
 
 ## Installation
