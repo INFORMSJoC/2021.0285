@@ -40,7 +40,7 @@ doi = {10.11578/dc.20201001.29},
 url = {https://doi.org/10.11578/dc.20201001.29},
 howpublished = {[Computer Software] \url{https://doi.org/10.11578/dc.20201001.29}},
 year = {2017},
-month = {may}
+month = {May}
 }
 ```
 
@@ -54,7 +54,7 @@ doi = {10.11578/dc.20201109.2},
 url = {https://doi.org/10.11578/dc.20201109.2},
 howpublished = {[Computer Software] \url{https://doi.org/10.11578/dc.20201109.2}},
 year = {2020},
-month = {sep}
+month = {Sep}
 }
 ```
 
