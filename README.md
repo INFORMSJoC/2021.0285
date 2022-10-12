@@ -108,7 +108,7 @@ navigate out of the Pyomo directory first.
 
 ```
 git clone https://github.com/INFORMSJoC/2021.0285.git IJOC_2021.0285
-cd IJOC_2021.0285/src/parapint-0.4.0/
+cd IJOC_2021.0285/src/
 pip install -e ./
 ```
 
