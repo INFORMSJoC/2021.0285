@@ -1,3 +1,14 @@
+#  ___________________________________________________________________________
+#
+#  Parapint
+#  Copyright (c) 2020
+#  National Technology and Engineering Solutions of Sandia, LLC
+#  Under the terms of Contract DE-NA0003525 with National Technology and
+#  Engineering Solutions of Sandia, LLC, the U.S. Government retains certain
+#  rights in this software.
+#  This software is distributed under the 3-clause BSD License.
+#  ___________________________________________________________________________
+
 import numpy as np
 from scipy.sparse import coo_matrix, identity
 from utils import get_random_n_diagonal_matrix, get_ownership_map, distribute_blocks

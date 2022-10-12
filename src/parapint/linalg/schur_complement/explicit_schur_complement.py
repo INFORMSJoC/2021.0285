@@ -1,3 +1,14 @@
+#  ___________________________________________________________________________
+#
+#  Parapint
+#  Copyright (c) 2020
+#  National Technology and Engineering Solutions of Sandia, LLC
+#  Under the terms of Contract DE-NA0003525 with National Technology and
+#  Engineering Solutions of Sandia, LLC, the U.S. Government retains certain
+#  rights in this software.
+#  This software is distributed under the 3-clause BSD License.
+#  ___________________________________________________________________________
+
 from pyomo.contrib.pynumero.sparse import BlockMatrix, BlockVector
 from parapint.linalg.base_linear_solver_interface import LinearSolverInterface
 from parapint.linalg.results import LinearSolverStatus, LinearSolverResults
