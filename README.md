@@ -24,38 +24,21 @@ get a more recent version or would like support.**
 
 ## Cite
 
-To cite this software, please cite the [paper](TBD) using its DOI and the software itself, using one of the following DOIs.
+To cite this software, please cite the [paper](TBD) using its DOI and the software itself using the following DOI:
 
-PyNumero: https://doi.org/10.11578/dc.20201001.29
+[![DOI](https://zenodo.org/badge/494541738.svg)](https://zenodo.org/badge/latestdoi/494541738)
 
-Parapint: https://doi.org/10.11578/dc.20201109.2
-
-Below is the BibTex for citing PyNumero.
+Below is the BibTex for citing this version of the code.
 
 ```
-@misc{pyomo,
-title = {Pyomo v6.0},
-author = {Woodruff, David and Hackebeil, Gabe and Laird, Carl D. and Nicholson, Bethany L. and Hart, William E. and Siirola, John D. and Watson, Jean-Paul},
-doi = {10.11578/dc.20201001.29},
-url = {https://doi.org/10.11578/dc.20201001.29},
-howpublished = {[Computer Software] \url{https://doi.org/10.11578/dc.20201001.29}},
-year = {2017},
-month = {May}
-}
-```
-
-Below is the BibTex for citing Parapint.
-
-```
-@misc{parapint,
-title = {Parapint, Version 0.4.0},
-author = {Bynum, Michael and Laird, Carl and Nicholson, Bethany and Rizdal, Denis},
-doi = {10.11578/dc.20201109.2},
-url = {https://doi.org/10.11578/dc.20201109.2},
-howpublished = {[Computer Software] \url{https://doi.org/10.11578/dc.20201109.2}},
-year = {2020},
-month = {Sep}
-}
+@misc{Parapint,
+  author =        {Bynum, Michael and Laird, Carl and Nicholson, Bethany and Rizdal, Denis},
+  publisher =     {INFORMS Journal on Computing},
+  title =         {{Parapint} Version v2021.0285},
+  year =          {2022},
+  doi =           {10.5281/zenodo.7192328},
+  url =           {https://github.com/INFORMSJoC/2021.0285},
+}  
 ```
 
 ## Description
