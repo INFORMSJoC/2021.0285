@@ -9,7 +9,7 @@ on Computing](https://pubsonline.informs.org/journal/ijoc) under the
 The software and data in this repository are a snapshot of the
 software and data that were used in the research reported on in the
 paper [Scalable Parallel Nonlinear Optimization with PyNumero and
-Parapint](TBD) by J. Rodriguez, R. Parker, C. Laird, B. Nicholson,
+Parapint](https://doi.org/10.1287/ijoc.2023.1272) by J. Rodriguez, R. Parker, C. Laird, B. Nicholson,
 J. Siirola, and M. Bynum.  Note that PyNumero is a module within
 Pyomo. The snapshot is based on [this
 SHA](https://github.com/Pyomo/pyomo/commit/a415dbfe3e1dfe343e7f829b6219a0e0b7fa8f0f)
